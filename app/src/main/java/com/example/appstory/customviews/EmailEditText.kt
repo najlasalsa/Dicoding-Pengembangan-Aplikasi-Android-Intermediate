@@ -30,7 +30,6 @@ class EmailEditText : AppCompatEditText {
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = context.getString(R.string.email)
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 
