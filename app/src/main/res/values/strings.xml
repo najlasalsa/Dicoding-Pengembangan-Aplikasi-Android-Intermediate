@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">App Story</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcomeGreet">What are you waiting for, come on in!</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="name">Name</string>
+    <string name="enter">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="create">Create now!</string>
+    <string name="acc">Don\'t have an account yet?</string>
+    <string name="sign">Please fill in the data completely!</string>
+    <string name="pass_message">Password less than 6 characters</string>
+    <string name="name_error">Enter name</string>
+    <string name="pass_error">Enter password</string>
+    <string name="email_error">Invalid email</string>
+    <string name="user_name">Name</string>
+    <string name="logout">Sign out</string>
+    <string name="add_story">Add Story</string>
+    <string name="detail_story">Detail Story</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="no_permit">No permission</string>
+    <string name="choose_pic">Choose a picture</string>
+    <string name="desc_trans">Description</string>
+    <string name="pict_trans">Picture</string>
+    <string name="name_trans">Name</string>
+    <string name="change_lang">Change Language</string>
+    <string name="desc_story">Enter image description</string>
+    <string name="pict">Choose image</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="retry">retry</string>
+    <string name="maps_story">Maps Story</string>
+</resources>

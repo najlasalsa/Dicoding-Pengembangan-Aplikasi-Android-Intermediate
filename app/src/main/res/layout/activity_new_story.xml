@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".story.NewStoryActivity">
+
+    <ImageView
+        android:id="@+id/camPrev"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/pict_trans"
+        android:src="@drawable/ic_baseline_insert_photo_24"
+        app:layout_constraintBottom_toTopOf="@id/cameraButt"
+        app:layout_constraintEnd_toEndOf="@id/galleryButt"
+        app:layout_constraintStart_toStartOf="@id/cameraButt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cameraButt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/camPrev" />
+
+    <Button
+        android:id="@+id/galleryButt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="91dp"
+        android:elevation="2dp"
+        android:text="@string/gallery"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraButt"
+        app:layout_constraintTop_toTopOf="@+id/cameraButt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/storyDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraButt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/uploadButt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="155dp"
+        android:elevation="2dp"
+        android:text="@string/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyDesc" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
